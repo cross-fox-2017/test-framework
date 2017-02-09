@@ -1,4 +1,3 @@
-
 const assert = require('assert');
 const should = require('chai').should()
 
@@ -10,49 +9,59 @@ const testingMath5 = require('./math/root');
 const testingMath6 = require('./math/substract');
 
 describe('Testing Fungsi Matematika', function() {
-  describe('Pertambahan',function() {
-      it('Operasi Harus Benar',function() {
-        testingMath1.mathAdd(1,1).should.equal(2);
-      })
-      it('Tipe Data Input Harus Number',function() {
-        testingMath1.mathAdd(1,1).should.be.a("number");
-      })
-  })
+    describe('Pertambahan', function() {
+        it('Operasi Harus Benar', function() {
+            testingMath1.mathAdd(1, 1).should.equal(2);
+        })
+        it('Tipe Data Input Harus Number', function() {
+            testingMath1.mathAdd(1, 1).should.be.a("number");
+        })
+    })
 
-  describe('Pengurangan',function() {
+    describe('Pengurangan', function() {
+        it('Operasi Harus Benar', function() {
+            testingMath2.mathDivide(1, 1).should.equal(0);
+        })
+        it('Tipe Data Input Harus Number', function() {
+            testingMath2.mathDivide(1, 1).should.be.a("number");
+        })
+    })
 
-  })
+    describe('Perkalian', function() {
+        it('Operasi Harus Benar', function() {
+            testingMath4.mathMultiply(2, 2).should.equal(4);
+        })
+        it('Tipe Data Input Harus Number', function() {
+            testingMath4.mathMultiply(2, 2).should.be.a("number");
+        })
+    })
 
-  describe('Perkalian',function() {
 
-  })
+    describe('Pembagian', function() {
+        it('Operasi Harus Benar', function() {
+            testingMath3.mathExponent(2, 1).should.equal(2);
+        })
+        it('Tipe Data Input Harus Number', function() {
+            testingMath3.mathExponent(2, 1).should.be.a("number");
+        })
+    })
 
-  describe('Pembagian',function() {
+    describe('Pangkat', function() {
+        it('Operasi Harus Benar', function() {
+            testingMath5.mathRoot(5, 5).should.equal(3125);
+        })
+        it('Tipe Data Input Harus Number', function() {
+            testingMath5.mathRoot(5, 5).should.be.a("number");
+        })
+    })
 
-  })
-
-  describe('Pangkat',function() {
-
-  })
-
-  describe('Akar',function() {
-
-  })
+    describe('Akar', function() {
+        it('Operasi Harus Benar', function() {
+            testingMath6.mathSubstract(9).should.equal(3);
+        })
+        it('Tipe Data Input Harus Number', function() {
+            testingMath6.mathSubstract(9).should.be.a("number");
+        })
+    })
 
 })
-
-// assert.equal(testingMath2.mathDivide(1,1),0)
-// assert.equal(testingMath2.mathDivide(2),false)
-//
-//
-// assert.equal(testingMath3.mathExponent(2,1),2)
-// assert.equal(testingMath3.mathExponent(2),false)
-//
-// assert.equal(testingMath4.mathMultiply(2,2),4)
-// assert.equal(testingMath4.mathMultiply(2),false)
-//
-// assert.equal(testingMath5.mathRoot(5,5),3125)
-// assert.equal(testingMath5.mathRoot(2),false)
-//
-// assert.equal(testingMath6.mathSubstract(9),3)
-// assert.equal(testingMath6.mathSubstract(),false)
