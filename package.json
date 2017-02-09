@@ -1,0 +1,23 @@
+{
+  "name": "test-assertion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "release_0.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radityaarya/test-assertion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radityaarya/test-assertion/issues"
+  },
+  "homepage": "https://github.com/radityaarya/test-assertion#readme"
+}
