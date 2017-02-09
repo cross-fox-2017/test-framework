@@ -4,7 +4,6 @@ const chai      = require('chai')
 const should    = chai.should()
 
 
-// var assert = require('assert');
 describe('fungsi penjumlahan', function() {
   it('menghasilkan angka 6', function() {
       math.add(1,5).should.equal(6);
@@ -14,6 +13,9 @@ describe('fungsi penjumlahan', function() {
   });
   it('output harus berupa number', function() {
       math.add(5,0).should.be.a('number');
+  });
+  it('output harus berupa number lagi berdasarkan function', function() {
+      math.add('q',9).should.equal('masukkkan number');
   });
 });
 
