@@ -1,9 +1,9 @@
 function pangkat(a,b){
-  if(isNaN(a)&&isNaN(b)){
-    return "isi parameternya"
+  if(!a||!b){
+    return "parameternya harus diisi"
   }
-  if(isNaN(a)||isNaN(b)){
-    return "parmeternya kurang 1"
+  else if(typeof a !== 'number'||typeof b !== 'number'){
+    return "parameter harus angka"
   }
   else{
     return Math.pow(a,b)
