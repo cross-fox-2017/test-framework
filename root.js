@@ -1,5 +1,5 @@
 const root = a => {
-  if (a) {
+  if (isNaN(a)) {
     return 'error'
   } else {
     return Math.sqrt(a)
