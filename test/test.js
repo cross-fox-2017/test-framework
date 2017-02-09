@@ -9,6 +9,10 @@ describe('Testing mathematic function', function () {
     it('check output, pertambahan(1,1) should be 2', function () {
       mathematic.pertambahan(1, 1).should.equal(2)
     })
+    // expected output
+    it('check output, pertambahan(1,1) should be a number', function () {
+      mathematic.pertambahan(1, 1).should.be.a('number')
+    })
     // err
     it("check input, you can't fill parameter with string or empty", function () {
       mathematic.pertambahan().should.equal('input must number not string or empty')
