@@ -61,9 +61,9 @@ describe('Math.multiply(a, b)', function () {
     expect(math.multiply(-1, -1)).to.equal(1)
     expect(math.multiply(1 * 2, -1)).to.equal(-2)
     expect(math.multiply('1', '1')).to.equal(1)
-    expect(math.multiply('1', '2')).equal(2)
-    expect(math.multiply(1 * 4, 2)).equal(8)
-    expect(math.multiply(-2, 2)).equal(-4)
+    expect(math.multiply('1', '2')).to.equal(2)
+    expect(math.multiply(1 * 4, 2)).to.equal(8)
+    expect(math.multiply(-2, 2)).to.equal(-4)
   })
 
   it('should return other result of a * b', function () {
