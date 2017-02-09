@@ -125,8 +125,8 @@ describe('Math.exponent(a)', function () {
 // -----------------------------------------------------------------------------
 // ROOT
 
-describe('Math.exponent(a)', function () {
-  it('should return the result of a * a', function () {
+describe('Math.root(a)', function () {
+  it('should return the result of sqrt(a)', function () {
     expect(math.root(1)).to.equal(1)
     expect(math.root(1 * 4)).to.equal(2)
     expect(math.root('1')).to.equal(1)
@@ -135,7 +135,7 @@ describe('Math.exponent(a)', function () {
     expect(math.root(4)).to.equal(2)
   })
 
-  it('should return other result of a * a', function () {
+  it('should return other result of sqrt(a)', function () {
     expect(math.root(0)).to.not.equal(3)
     expect(math.root(4)).to.not.equal(-18)
     expect(math.root('12')).to.not.equal(-2)
