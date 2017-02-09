@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha --reporter nyan --growl"
+    "test": "mocha --reporter list"
   },
   "repository": {
     "type": "git",

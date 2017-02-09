@@ -55,7 +55,7 @@ describe('perkalian', function() {
 // pembagian
 
 describe('fungsi pembagian', function() {
-  it('fungsi operasi berjalan sesuai dengan mestinya', function() {
+  it('fungsi operasi berjalan sesuai fungsinya', function() {
     matematika.pembagian(4,2).should.equal(2)
     matematika.pembagian(2,4).should.equal(0.5)
     matematika.pembagian(-3,-2).should.equal(1.5)
@@ -69,7 +69,7 @@ describe('fungsi pembagian', function() {
 // pangkat
 
 describe('fungsi perpangkatan', function() {
-  it('fungsi operasi berjalan sesuai dengan mestinya', function() {
+  it('fungsi operasi berjalan sesuai fungsinya', function() {
     matematika.pangkat(4,2).should.equal(16)
     matematika.pangkat(4).should.equal(16)
     })
@@ -82,10 +82,10 @@ describe('fungsi perpangkatan', function() {
 // akar
 
 describe('fungsi akar pangkat', function() {
-  it('fungsi operasi berjalan sesuai dengan mestinya', function() {
+  it('fungsi operasi berjalan sesuai fungsinya', function() {
     matematika.akar(4).should.equal(2)
     })
-    it('input harus angka positice', function() {
+    it('input harus angka positive', function() {
     matematika.akar(-12).should.equal('Must a Positive Number')
     })
     it('input harus diisi dan harus angka', function() {
